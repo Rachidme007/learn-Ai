@@ -1,0 +1,24 @@
+{
+  
+  
+  "code-runner.runInTerminal": true,
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "cmake.options.statusBarVisibility": "visible",
+  "workbench.activityBar.location": "bottom",
+  "editor.minimap.enabled": false,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.lineLength": 100,
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  "notebook.codeActionsOnSave": {},
+  "files.autoSave": "afterDelay",
+  "editor.codeActionsOnSave": {
+
+  }
+  
+
+   
+
+}
