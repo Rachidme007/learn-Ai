@@ -5,4 +5,4 @@ print(
     '"Hello, My Name IS %s  And Iam %s  Years Old and I Live in %s "'
     % (myName, myAge, myCountry)
 )
-print(type(myName), "\n", type(myCountry), "\n", type(myAge))
+print(type(myName), "\n", type(myCountry), "\n", type(myAge), "fuck")
