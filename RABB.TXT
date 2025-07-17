@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="https://leaked.tools/favicon.ico" />
+  <title>BISHOUJO - Leaked.tools</title>
+  <meta name="title" content="BISHOUJO - Search">
+  <meta name="description" content="Search through thousands of files and pastes, Scrape proxies from any website, Create and share pastes, or Use various APIs. All for free.">
+  <meta name="theme-color" content="#00FF00" />
+  <meta name="language" content="English" />
+  <meta name="author" content="Sango" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="combos, proxies, configs, anonfiles, leaks, leaked, bayfiles, ghostbin, cracked, accounts, files, paste, pastebin" />
+  <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leaked.tools/">
+  <meta property="og:title" content="BISHOUJO - Search">
+  <meta property="og:description" content="Search through thousands of files and pastes, Scrape proxies from any website, Create and share pastes, or Use various APIs. All for free.">
+  <meta property="og:image" content="https://leaked.tools/img/250.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_small_image">
+  <meta name="twitter:site" content="@moistp1ckle">
+  <meta name="twitter:creator" content="@moistp1ckle">
+  <meta property="twitter:url" content="https://leaked.tools/">
+  <meta property="twitter:title" content="BISHOUJO - Search">
+  <meta property="twitter:description" content="Search through thousands of files and pastes, Scrape proxies from any website, Create and share pastes, or Use various APIs. All for free.">
+  <meta property="twitter:image" content="https://leaked.tools/img/250.png">
+  <link href="/css/style.css" rel="stylesheet">
+  <script src="/js/jquery-3.6.0.min.js"></script>
+</head>
+<body style="background-color:#111111">
+  <header class="nav preload">
+    <div class="nav-inner">
+        <a href="/" class="nav-logo-holder" title="Leaked.wiki">
+            <img loading="lazy" alt="Navbar Logo" class="nav-logo" src="/img/logo.svg">
+            <div class="nav-text-split"><span>LEAKED.TOOLS</span></div>
+            <!-- <img loading="lazy" alt="Navbar Text" class="nav-text" src="/img/navtext.png"> -->
+        </a>
+        <nav class="nav-items">
+            <a href="/" class="nav-item">Home</a>
+            <!-- <div class="nav-dropdown">
+                <a href="/tools" class="nav-item">Tools</a>
+                <div class="nav-dropdown-content">
+                    <a onclick='dropShow("minecraft")' href="#">Minecraft <svg style="float:right; padding-left: 20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-2x"><path fill="currentColor" d="M176 80.048v73.798H48c-26.51 0-48 21.49-48 48v108.308c0 26.51 21.49 48 48 48h128v73.789c0 42.638 51.731 64.151 81.941 33.941l176-175.943c18.745-18.745 18.746-49.137 0-67.882l-176-175.952C227.792 15.958 176 37.325 176 80.048zM400 256L224 432V310.154H48V201.846h176V80l176 176z" class=""></path></svg></a>
+                    <a href="#">Discord <svg style="float:right; padding-left: 20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-2x"><path fill="currentColor" d="M176 80.048v73.798H48c-26.51 0-48 21.49-48 48v108.308c0 26.51 21.49 48 48 48h128v73.789c0 42.638 51.731 64.151 81.941 33.941l176-175.943c18.745-18.745 18.746-49.137 0-67.882l-176-175.952C227.792 15.958 176 37.325 176 80.048zM400 256L224 432V310.154H48V201.846h176V80l176 176z" class=""></path></svg></a>
+                    <a href="#">Resolvers <svg style="float:right; padding-left: 20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-2x"><path fill="currentColor" d="M176 80.048v73.798H48c-26.51 0-48 21.49-48 48v108.308c0 26.51 21.49 48 48 48h128v73.789c0 42.638 51.731 64.151 81.941 33.941l176-175.943c18.745-18.745 18.746-49.137 0-67.882l-176-175.952C227.792 15.958 176 37.325 176 80.048zM400 256L224 432V310.154H48V201.846h176V80l176 176z" class=""></path></svg></a>
+                    <a href="#">Text Editing <svg style="float:right; padding-left: 20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-2x"><path fill="currentColor" d="M176 80.048v73.798H48c-26.51 0-48 21.49-48 48v108.308c0 26.51 21.49 48 48 48h128v73.789c0 42.638 51.731 64.151 81.941 33.941l176-175.943c18.745-18.745 18.746-49.137 0-67.882l-176-175.952C227.792 15.958 176 37.325 176 80.048zM400 256L224 432V310.154H48V201.846h176V80l176 176z" class=""></path></svg></a>
+                    <a href="#">DNS & Network <svg style="float:right; padding-left: 20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-2x"><path fill="currentColor" d="M176 80.048v73.798H48c-26.51 0-48 21.49-48 48v108.308c0 26.51 21.49 48 48 48h128v73.789c0 42.638 51.731 64.151 81.941 33.941l176-175.943c18.745-18.745 18.746-49.137 0-67.882l-176-175.952C227.792 15.958 176 37.325 176 80.048zM400 256L224 432V310.154H48V201.846h176V80l176 176z" class=""></path></svg></a>
+                    <a href="#">Programs <svg style="float:right; padding-left: 20px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-2x"><path fill="currentColor" d="M176 80.048v73.798H48c-26.51 0-48 21.49-48 48v108.308c0 26.51 21.49 48 48 48h128v73.789c0 42.638 51.731 64.151 81.941 33.941l176-175.943c18.745-18.745 18.746-49.137 0-67.882l-176-175.952C227.792 15.958 176 37.325 176 80.048zM400 256L224 432V310.154H48V201.846h176V80l176 176z" class=""></path></svg></a>
+                </div>
+                <div class="nav-dropdown-content hidden-dropdown" id="minecraft">
+                    <a onclick="dropBack()" href="#"><svg style="padding-right: 5px;" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-left fa-w-14 fa-2x"><path fill="currentColor" d="M272 431.952v-73.798h128c26.51 0 48-21.49 48-48V201.846c0-26.51-21.49-48-48-48H272V80.057c0-42.638-51.731-64.15-81.941-33.941l-176 175.943c-18.745 18.745-18.746 49.137 0 67.882l176 175.952C220.208 496.042 272 474.675 272 431.952zM48 256L224 80v121.846h176v108.308H224V432L48 256z" class=""></path></svg> Back</span></a>
+                    <a href="#">Username Lookup</a>
+                    <a href="#">Something Else</a>
+                    <a href="#">Another Thing</a>
+                    <a href="#">Last Thing</a>
+                </div>
+            </div>
+            <div class="nav-dropdown">
+                <a href="/paste" class="nav-item">Paste</a>
+                <div class="nav-dropdown-content">
+                    <a href="/paste">Create Paste</a>
+                    <a href="#">Recent Pastes</a>
+                    <a href="#">Top Pastes</a>
+                </div>
+            </div> -->
+            <a href="/paste" class="nav-item">Paste</a>
+            <!-- <a href="/tools" class="nav-item disabled">Tools</a> -->
+            <a target="_blank" href="https://bitfast.cc" class="nav-item" title="Bitfast.cc - Free Bitcoin Accelerator">Bitfast</a>
+            <a href="/api" class="nav-item">API</a>
+            <a href="/contact" class="nav-item">Contact</a>
+                    </nav>
+    </div>
+</header>
+<!-- <div class="nav-holder" style="
+    max-width: var(--max-width);
+    width: 100%;
+    padding: 0 179px;
+    margin: 20px auto 20px auto;
+"><header class="nav" style="
+    border: var(--border);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    border-radius: var(--radius);
+    /* border-top: none; */
+    box-shadow: var(--shadow);
+">
+<div class="nav-inner" style="
+    padding: 0 20px;
+">
+<a href="/" class="nav-logo-holder" title="Leaked.wiki">
+<img loading="lazy" alt="Navbar Logo" class="nav-logo" src="/img/logo.svg">
+<img loading="lazy" alt="Navbar Text" class="nav-text" src="/img/navtext.png">
+</a>
+<nav class="nav-items">
+<a href="/" class="nav-item">Home</a>
+
+<a href="/paste" class="nav-item">Paste</a>
+
+<a href="/proxies" class="nav-item disabled">Proxies</a>
+<a href="/api" class="nav-item">API</a>
+<a href="/contact" class="nav-item">Contact</a>
+<a href="/login" class="nav-item"><svg class="svg-inline--fa fa-search fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path></svg> Login</a>
+</nav>
+</div>
+</header><div class="progress-container" style="
+    position: relative;
+    display: none;
+">
+<div class="progress-bar" id="myBar"></div>
+</div>
+</div> -->
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".preload").forEach(function(element) {
+        element.classList.remove("preload");
+    });
+});
+x = window.location.pathname.split('/')[1];
+if (x === '' || x === 'home') { x = ""; } 
+// if (x === 'p' || x === 'e') { x = "paste"; } 
+if (["", "proxies", "paste", "api", "contact"].includes(x)) {
+    $(".nav-item[href$='/" + x + "']").addClass("nav-active");
+}
+function dropShow(id) {
+    $(".nav-dropdown:hover .nav-dropdown-content:not(.hidden-dropdown,.latest-dropdown)").addClass("latest-dropdown");
+    $("#"+id).removeClass("hidden-dropdown");
+}
+function dropBack(id) {
+    $(".nav-dropdown:hover .nav-dropdown-content:not(.hidden-dropdown,.latest-dropdown)").addClass("hidden-dropdown");
+    $(".latest-dropdown").removeClass("latest-dropdown");
+}
+</script>
+<style>
+.nav-text-split {
+    position: relative;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: visible;
+}
+.nav-text-split span {
+  visibility: hidden;
+}
+.nav-text-split::before, .nav-text-split::after  {
+  content: "LEAKED.TOOLS";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #00ff00;
+  text-shadow: 0 -1px 3px #00ff0052, 0 -1px 5px #00ff00a8;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.nav-text-split::before {/* top half */
+    clip-path: inset(0 0 50% 0);
+}
+.nav-text-split::after { /* bottom half */
+  clip-path: inset(50% 0 0 0);
+}
+
+.nav-logo-holder:hover .nav-text-split::before {
+    color: #ffffff;
+    text-shadow: 0 -1px 3px #FF0000, 0 -1px 5px #0000FF;
+    transform: translateX(3px); 
+}
+.nav-logo-holder:hover .nav-text-split::after {
+  transform: translateX(-3px); 
+}
+.nav-logo-holder {
+  gap: 10px;   
+}
+</style>  <div class="main-content">
+    <div class = 'aK3cS3ddd'><!-- <a href = 'https://t.me/Deathmatics' target = '_blank'><img data-expire = 'Oct. 29th' style = 'box-shadow: 0 0 10px #FFCC005e;max-height: 120px;' class = 'jnbcfoui' src = '/banner/botnet.webp' alt = 't.me/Deathmatics - #1 Botnet / Stealer' title = 't.me/Deathmatics - #1 Botnet / Stealer'></a> -->
+<!-- <a href = 'https://proxylink.pro/leakedwiki' target = '_blank'><img data-expire = 'Jan. 16th' style = 'box-shadow: 0 0 10px #588acf5e;max-height: 120px;' class = 'jnbcfoui' src = '/banner/proxylink.gif' alt = 'ProxyLink.pro' title = 'ProxyLink.pro'></a> -->
+<!-- <a href = 'https://layer7booter.com/' target = '_blank'><img data-expire = 'Feb. 17th' style = 'box-shadow: 0 0 10px #51FF475e;max-height: 120px;' class = 'jnbcfoui' src = '/banner/l7b2.gif' alt = 'LAYER7BOOTER.com' title = 'LAYER7BOOTER.com'></a> -->
+<a href = '/ads'><img class = 'jnbcfoui' src = '/banner/default.png' alt = 'Buy this ad spot' title = 'Buy this ad spot'></a>
+<a href = '/ads'><img class = 'jnbcfoui' src = '/banner/default.png' alt = 'Buy this ad spot' title = 'Buy this ad spot'></a>
+<!-- <a href = '/ads'><img class = 'jnbcfoui' src = '/banner/default.png' alt = 'Buy this ad spot' title = 'Buy this ad spot'></a> -->
+<!-- <a href = '/ads'><img class = 'jnbcfoui' src = '/banner/default.png' alt = 'Buy this ad spot' title = 'Buy this ad spot'></a> -->
+</div>
+<style>
+.jnbcfoui {
+    backface-visibility: hidden;
+}
+</style>    <section class="main-section">
+      <div class="page-inner">
+        <form class="search-form" method="get" action="../search" target="_self">
+          <input val="combo" type="text" placeholder="Combos, Proxies, NordVPN, Spotify, etc..." name="q" autocomplete="off" maxlength="75" value="BISHOUJO">
+          <button data-tip="Search" type="submit"><svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+              <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+            </svg></button>
+        </form>
+                <table id="search_res">
+          <thead>
+            <tr>
+              <th><a data-tip="Sort by Desc." href="/search?q=BISHOUJO&sort=title&order=desc">Title</a></th><th><a data-tip="Sort by Desc." href="/search?q=BISHOUJO&sort=type&order=desc">Type</a></th><th><a data-tip="Sort by Desc." href="/search?q=BISHOUJO&sort=size&order=desc">Size</a></th><th><a data-tip="Sort by Desc." href="/search?q=BISHOUJO&sort=clicks&order=desc">Clicks</a></th><th><a data-tip="Sort by Asc." href="/search?q=BISHOUJO&sort=date&order=asc">Index Date<i class="desc"></i></a></th>            </tr>
+          </thead>
+            <tbody>
+            <tr><td label='Title'><a href='out?url=2282020' target='_blank' title='Juliette Michele Bishoujomom Juliettemichele Leaked Onlyfans'>Juliette Michele Bishoujomom Juliettemichele Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>69.00 B</td><td label='Clicks'>2</td><td label='Index Date'>2 weeks ago</td><tr><td label='Title'><a href='out?url=2278418' target='_blank' title='Bishoujomom NEW HOT BUSTY NYMPHO SLUT BEGS FOR COCK S3XT4P3 Leaked Onlyfans'>Bishoujomom NEW HOT BUSTY NYMPHO SLUT BEGS FOR COCK S3XT4P3 Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>69.00 B</td><td label='Clicks'>9</td><td label='Index Date'>2 months ago</td><tr><td label='Title'><a href='out?url=2273662' target='_blank' title='Bishoujomom OF Leaked Onlyfans'>Bishoujomom OF Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>69.00 B</td><td label='Clicks'>32</td><td label='Index Date'>6 months ago</td><tr><td label='Title'><a href='out?url=2270607' target='_blank' title='BISHOUJOMOM JULIETTE MICHELE Leaked Onlyfans'>BISHOUJOMOM JULIETTE MICHELE Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>69.00 B</td><td label='Clicks'>32</td><td label='Index Date'>7 months ago</td><tr><td label='Title'><a href='out?url=2262906' target='_blank' title='BishoujoMom Leaked Onlyfans'>BishoujoMom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>69.00 B</td><td label='Clicks'>48</td><td label='Index Date'>9 months ago</td><tr><td label='Title'><a href='out?url=2262583' target='_blank' title='BishoujoMom Leaked Onlyfans'>BishoujoMom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>69.00 B</td><td label='Clicks'>20</td><td label='Index Date'>9 months ago</td><tr><td label='Title'><a href='out?url=2251359' target='_blank' title='Bishoujomom Leaked Onlyfans'>Bishoujomom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>111.00 B</td><td label='Clicks'>15</td><td label='Index Date'>11 months ago</td><tr><td label='Title'><a href='out?url=2247315' target='_blank' title='Bishoujomom Leaked Onlyfans'>Bishoujomom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>433.00 B</td><td label='Clicks'>16</td><td label='Index Date'>1 year ago</td><tr><td label='Title'><a href='out?url=2236242' target='_blank' title='Bishoujomom Leaked Onlyfans'>Bishoujomom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>137.00 B</td><td label='Clicks'>49</td><td label='Index Date'>2 years ago</td><tr><td label='Title'><a href='out?url=2236106' target='_blank' title='Bishoujomom Leaked Onlyfans'>Bishoujomom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>2.10 kB</td><td label='Clicks'>55</td><td label='Index Date'>2 years ago</td><tr><td label='Title'><a href='out?url=2234906' target='_blank' title='Bishoujomom Leaked Onlyfans'>Bishoujomom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>137.00 B</td><td label='Clicks'>60</td><td label='Index Date'>2 years ago</td><tr><td label='Title'><a href='out?url=2231350' target='_blank' title='Bishoujomom Leaked Onlyfans'>Bishoujomom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>137.00 B</td><td label='Clicks'>58</td><td label='Index Date'>2 years ago</td><tr><td label='Title'><a href='out?url=2231184' target='_blank' title='Bishoujomom Leaked Onlyfans'>Bishoujomom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>271.00 B</td><td label='Clicks'>39</td><td label='Index Date'>2 years ago</td><tr><td label='Title'><a href='out?url=2230789' target='_blank' title='Bishoujomom Leaked Onlyfans'>Bishoujomom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>271.00 B</td><td label='Clicks'>36</td><td label='Index Date'>2 years ago</td><tr><td label='Title'><a href='out?url=2225985' target='_blank' title='Juliette Michele Bishoujomom Leaked Onlyfans'>Juliette Michele Bishoujomom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>724.00 B</td><td label='Clicks'>53</td><td label='Index Date'>2 years ago</td><tr><td label='Title'><a href='out?url=2224677' target='_blank' title='Bishoujomom Leaked Onlyfans'>Bishoujomom Leaked Onlyfans</a></td><td label='Type'>Paste</td><td label='Size'>990.00 B</td><td label='Clicks'>25</td><td label='Index Date'>2 years ago</td><tr><td label='Title'><a href='out?url=2191816' target='_blank' title='vampires of the night 4 bishoujo senshi sailor moon .pdf'>vampires of the night 4 bishoujo senshi sailor moon .pdf</a></td><td label='Type'>File</td><td label='Size'>7.80 MB</td><td label='Clicks'>1</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=2179421' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 10 &amp;#40;720p&amp;#41;-480p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 10 &amp;#40;720p&amp;#41;-480p.mp4</a></td><td label='Type'>File</td><td label='Size'>149.10 MB</td><td label='Clicks'>1</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=2104810' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [720p]-360p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [720p]-360p.mp4</a></td><td label='Type'>File</td><td label='Size'>94.90 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1972934' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 04 &amp;#40;720p&amp;#41;-360p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 04 &amp;#40;720p&amp;#41;-360p.mp4</a></td><td label='Type'>File</td><td label='Size'>86.80 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1920610' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 10 &amp;#40;1080p&amp;#41;.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 10 &amp;#40;1080p&amp;#41;.mp4</a></td><td label='Type'>File</td><td label='Size'>419.20 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1913995' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 03 &amp;#40;720p&amp;#41;-360p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 03 &amp;#40;720p&amp;#41;-360p.mp4</a></td><td label='Type'>File</td><td label='Size'>84.30 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1831797' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [720p]-360p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [720p]-360p.mp4</a></td><td label='Type'>File</td><td label='Size'>94.90 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1812085' target='_blank' title='[Shahiid-anime.net] Bishoujo Senshi Sailor Moon Eternal Movie 1 [720p].mp4'>[Shahiid-anime.net] Bishoujo Senshi Sailor Moon Eternal Movie 1 [720p].mp4</a></td><td label='Type'>File</td><td label='Size'>653.20 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1777264' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 05 &amp;#40;720p&amp;#41;-480p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 05 &amp;#40;720p&amp;#41;-480p.mp4</a></td><td label='Type'>File</td><td label='Size'>149.30 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1741429' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 02 &amp;#40;1080p&amp;#41;.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 02 &amp;#40;1080p&amp;#41;.mp4</a></td><td label='Type'>File</td><td label='Size'>374.90 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1689801' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 10 &amp;#40;720p&amp;#41;-360p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 10 &amp;#40;720p&amp;#41;-360p.mp4</a></td><td label='Type'>File</td><td label='Size'>101.00 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1571357' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [720p]-360p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [720p]-360p.mp4</a></td><td label='Type'>File</td><td label='Size'>94.90 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1545898' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 04 &amp;#40;1080p&amp;#41;.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 04 &amp;#40;1080p&amp;#41;.mp4</a></td><td label='Type'>File</td><td label='Size'>344.80 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1315310' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 10 &amp;#40;1080p&amp;#41;.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 10 &amp;#40;1080p&amp;#41;.mp4</a></td><td label='Type'>File</td><td label='Size'>419.20 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1246796' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 02 &amp;#40;720p&amp;#41;.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 02 &amp;#40;720p&amp;#41;.mp4</a></td><td label='Type'>File</td><td label='Size'>178.80 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1197252' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 02 &amp;#40;720p&amp;#41;.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 02 &amp;#40;720p&amp;#41;.mp4</a></td><td label='Type'>File</td><td label='Size'>178.80 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1164215' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 04 &amp;#40;1080p&amp;#41;.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 04 &amp;#40;1080p&amp;#41;.mp4</a></td><td label='Type'>File</td><td label='Size'>344.80 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1160400' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 12 End &amp;#40;1080p&amp;#41;.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 12 End &amp;#40;1080p&amp;#41;.mp4</a></td><td label='Type'>File</td><td label='Size'>422.20 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1073699' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [1080p].mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [1080p].mp4</a></td><td label='Type'>File</td><td label='Size'>369.10 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1062436' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 10 &amp;#40;720p&amp;#41;-480p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 10 &amp;#40;720p&amp;#41;-480p.mp4</a></td><td label='Type'>File</td><td label='Size'>149.10 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=1019465' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [720p]-480p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [720p]-480p.mp4</a></td><td label='Type'>File</td><td label='Size'>140.10 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=972819' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 05 &amp;#40;720p&amp;#41;-480p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 05 &amp;#40;720p&amp;#41;-480p.mp4</a></td><td label='Type'>File</td><td label='Size'>149.30 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=904859' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 05 &amp;#40;720p&amp;#41;-360p.mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 05 &amp;#40;720p&amp;#41;-360p.mp4</a></td><td label='Type'>File</td><td label='Size'>100.80 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td><tr><td label='Title'><a href='out?url=884737' target='_blank' title='[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [1080p].mp4'>[Shahiid-anime.net] Fantasy Bishoujo Juniku Ojisan to - 08 [1080p].mp4</a></td><td label='Type'>File</td><td label='Size'>369.10 MB</td><td label='Clicks'>0</td><td label='Index Date'>3 years ago</td>          </tbody>
+        </table>
+                  <div style="text-align:center;" class="pagination no-select">
+            
+            
+                        
+            <a href="/search?q=BISHOUJO&page=1"><button class="active">1</button></a>
+
+            <a href="/search?q=BISHOUJO&page=2"><button>2</button></a>            
+            
+                          <a href="/search?q=BISHOUJO&page=2"><button data-tip="Next Page"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-alt-right fa-w-14 fa-2x">
+                    <path fill="currentColor" d="M176 80.048v73.798H48c-26.51 0-48 21.49-48 48v108.308c0 26.51 21.49 48 48 48h128v73.789c0 42.638 51.731 64.151 81.941 33.941l176-175.943c18.745-18.745 18.746-49.137 0-67.882l-176-175.952C227.792 15.958 176 37.325 176 80.048zM400 256L224 432V310.154H48V201.846h176V80l176 176z" class=""></path>
+                  </svg></button></a>
+                      </div>
+              </div>
+  </div>
+  </section>
+  </div>
+  <script>
+    $('.dropdown').click(function() {
+      $(this).parent(".card-head").parent(".card").toggleClass("open");
+    });
+  </script>
+  <br/><br/><br/><br/>
+<button onclick="topFunction()" id="topBtn" data-tip="Scroll to Top" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/></svg></button>
+<div class="popup-wrap">
+<form action="#login" method="POST"><table class="popup slide unslide" id="login-popup" style="display:none">
+  <tr>
+      <th>Account Login</th>
+  </tr>
+  <tr><td id="username-error">
+      Username: <input name="username" type="text" required autocomplete="off" placeholder="Username" style="margin-left: 8px;">
+  </td></tr>
+  <tr><td id="password-error">
+      Password: <div class="edit_case"><input name="password" type="password" required autocomplete="off" placeholder="Password" style="margin-left: 8px;width: 180px;"><button style="width: fit-content;" data-tip="Show Password" onclick="event.preventDefault(); togglePassword(this);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-pencil fa-w-16 fa-2x"><path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></button></div>
+  </td></tr>
+  <tr><td id="captcha-error">
+    <div id="captcha" style="background: url(/img/loader.svg) center no-repeat;height: 76px;" data-theme="dark"></div>
+  </td></tr>
+  <tr><td style="padding: 11px;">
+    <label class="checktainer">Keep me Logged in
+    <input name="save_session" type="checkbox" tabindex="-1" checked="checked">
+    <span class="checkmark"></span>
+    </label>
+  </td></tr>
+  <tr><td id="general-error">
+    <button type="submit" style="width:100%;margin-bottom:10px;" disabled>Login</button>
+    <p style="font-size: 0.87em;" id="login-footer">Don't have an Account? <a onclick="event.preventDefault(); toggleLoginSwitch(this);" class="under" href="#register">Sign Up</a></p>
+  </td></tr>
+</table></form>
+<table class="popup slide unslide" id="banner-popup" style="display:none">
+    <tr>
+        <th>Advertisements<svg id="close" onclick="closePopup();" class="svg-inline--fa fa-w-16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512"><path d="M312.1 375c9.369 9.369 9.369 24.57 0 33.94s-24.57 9.369-33.94 0L160 289.9l-119 119c-9.369 9.369-24.57 9.369-33.94 0s-9.369-24.57 0-33.94L126.1 256L7.027 136.1c-9.369-9.369-9.369-24.57 0-33.94s24.57-9.369 33.94 0L160 222.1l119-119c9.369-9.369 24.57-9.369 33.94 0s9.369 24.57 0 33.94L193.9 256L312.1 375z"/></svg></th>
+    </tr>
+    <tr><td><a href="/ads"><img class="jnbcfoui" src="/banner/default.png" alt="Buy this ad spot" title="Buy this ad spot"></a></td></tr>
+    <tr><td><a href="/ads"><img class="jnbcfoui" src="/banner/default.png" alt="Buy this ad spot" title="Buy this ad spot"></a></td></tr>
+    <tr><td><a href="/ads"><img class="jnbcfoui" src="/banner/default.png" alt="Buy this ad spot" title="Buy this ad spot"></a></td></tr>
+    <tr><td><a href="/ads"><img class="jnbcfoui" src="/banner/default.png" alt="Buy this ad spot" title="Buy this ad spot"></a></td></tr>
+</table>
+</div>
+<div id="popup-background" onclick="closePopup();" class="fade-out" style="display:none"></div>
+<style>
+div#captcha>div {
+    margin: auto;
+}
+
+[data-error] {
+    overflow: visible;
+    position: relative;
+}
+
+[data-error]::before,
+[data-error]::after {
+    --arrow-size: 10px;
+    --scale: 0;
+    position: absolute;
+    z-index: 1337;
+    font-size: 0.8rem;
+    top: 100%; /* Move tooltip below the element */
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: .2s;
+    transform-origin: top center; /* Change origin to top */
+    animation: scaleError .25s forwards;
+}
+
+[data-error]::before {
+    --translate-y: calc(var(--arrow-size) + 0.25rem); /* Move the tooltip below the element */
+    content: attr(data-error);
+    color: var(--text-light);
+    padding: .4rem;
+    font-weight: 400;
+    width: max-content;
+    text-align: center;
+    border-radius: var(--radius);
+    background: #762e2e;
+    box-shadow: var(--shadow);
+}
+
+[data-error]::after {
+    --translate-y: 0; /* Move the arrow below the tooltip */
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-bottom-color: #762e2e; /* Change arrow to point up */
+    transform-origin: bottom center; /* Change origin to bottom */
+}
+
+@keyframes scaleError {
+    0% {
+        transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(0); /* Start with scale 0 */
+    }
+    100% {
+        transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(1); /* End with scale 1 */
+    }
+}
+
+
+.edit_case>input {
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius) 0 0 var(--radius);
+    border-color: inherit;
+    padding: 6px 10px;
+    box-shadow: none;
+    max-width: 140px;
+}
+
+.edit_case>button {
+    border-radius: 0 var(--radius) var(--radius) 0;
+    border-color: inherit;
+    padding: 6px 10px;
+    width: fit-content;
+    border-left: none;
+    box-shadow: none
+}
+
+.edit_case, .copy-paste {
+    border-color: var(--border-color);
+    width: fit-content;
+    display: inline-flex;
+    align-items: stretch;
+    transition: var(--trans);
+    box-shadow: var(--shadow);
+}
+
+table .edit_case {
+  box-shadow: none;
+} table .edit_case>input {
+  max-width: none;
+}
+
+.edit_case:focus-within, .copy-paste:focus-within {
+    border-color: var(--border-active)
+}
+
+.edit_case>button:active {
+    transform: translate(0)
+}
+
+
+
+</style>
+<script>
+let isRecaptchaRendered = false;
+
+// Utility function to check if all required fields in a form are filled
+function checkRequiredFields($form, $submitBtn, $doCaptcha) {
+    const requiredFields = $form.find('input[required]');
+    let allFilled = true;
+
+    // Check required fields
+    requiredFields.each(function () {
+        const $input = $(this);
+        if (($input.is(':checkbox') && !$input.is(':checked')) || (!$input.is(':checkbox') && $input.val().trim() === '')) {
+            allFilled = false;
+        }
+    });
+
+    if ($doCaptcha) {
+        // Check reCAPTCHA response
+        const recaptchaResponse = $form.find('textarea#g-recaptcha-response').val();
+        if (!recaptchaResponse) {
+            allFilled = false;
+        }
+    }
+
+    $submitBtn.prop('disabled', !allFilled);
+}
+
+// Function to handle field errors
+function handleFieldError($form, fieldName, errorMsg) {
+    const $errorElement = $form.find(`#${fieldName}-error`);
+    if (errorMsg) {
+        $errorElement.attr("data-error", errorMsg);
+    } else {
+        $errorElement.removeAttr("data-error");
+    }
+
+    const inputSelector = fieldName === 'tos' ? 'input[name="tos"]' : `input[name="${fieldName}"]`;
+    $form.find(inputSelector).on('input change', function () {
+        $errorElement.removeAttr("data-error");
+    });
+}
+
+// Function to set up form validation and submission via AJAX
+function setupFormValidation($form, $submitBtn, $doCaptcha = false, $redirect = false) {
+    const originalButtonText = $submitBtn.html();
+
+    const requiredFields = $form.find('input[required]');
+    requiredFields.each(function () {
+        $(this).on('input', function () {
+            checkRequiredFields($form, $submitBtn, $doCaptcha);
+        });
+    });
+
+    if ($doCaptcha && !isRecaptchaRendered) {
+        grecaptcha.ready(function () {
+            grecaptcha.render('captcha', {
+                'sitekey': '6Lfy46EgAAAAAFLGjSzH6qgGJQyfig2YCY_eiL57',
+                'callback': function (response) {
+                    checkRequiredFields($form, $submitBtn, $doCaptcha);
+                }
+            });
+            isRecaptchaRendered = true;
+        });
+    }
+
+    $(document).on('input', 'textarea#g-recaptcha-response', function () {
+        checkRequiredFields($form, $submitBtn, $doCaptcha);
+    });
+
+    checkRequiredFields($form, $submitBtn, $doCaptcha);
+
+    $form.off('submit');
+    $form.on('submit', function (e) {
+        e.preventDefault();
+
+        $submitBtn.html('<img src="/img/loadbar_white.svg" style="height: 16px;width:72px;vertical-align: middle;" />');
+        $submitBtn.prop('disabled', true);
+
+        const formData = new FormData($form[0]);
+
+        $form.find('[data-error]').removeAttr("data-error");
+
+        fetch($form.attr('action').replace('#', '/'), {
+            method: 'POST',
+            body: formData,
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    if ($redirect) { window.location.href = '/'; }
+                    else { location.reload(); }
+                } else {
+                    if (data.errors) {
+                        Object.keys(data.errors).forEach(fieldName => {
+                            handleFieldError($form, fieldName, data.errors[fieldName]);
+                        });
+                    }
+                    if ($doCaptcha) { grecaptcha.reset(); }
+                }
+            })
+            .catch(error => console.error('Error:', error))
+            .finally(() => {
+                $submitBtn.html(originalButtonText);
+                $submitBtn.prop('disabled', false);
+            });
+    });
+}
+
+
+function togglePassword(e){
+  if ($(e).attr("data-tip") == "Show Password") {
+    $("input[name='password']").attr("type", "text");
+    $("input[name='confirm-password']").attr("type", "text");
+    $(e).html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-pencil fa-w-16 fa-2x"><path fill="currentColor" d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg>').attr("data-tip", "Hide Password");
+  } else {
+    $("input[name='password']").attr("type", "password");
+    $("input[name='confirm-password']").attr("type", "password");
+    $(e).html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-pencil fa-w-16 fa-2x"><path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>').attr("data-tip", "Show Password");
+  }
+}
+
+
+function openPopup(id = "banner-popup", days = 5) {
+    var lastOpened, $bg, $popup;
+    lastOpened = JSON.parse(localStorage.getItem(id));
+    if (!lastOpened || (Date.now() - lastOpened) / 86400000 >= days) {
+        $popup = $("#" + id);
+        $bg = $("#popup-background");
+        if (!$bg.hasClass("fade-in")) { // check if a popup already open
+            // show popup
+            $bg.css('display', 'block');
+            $bg.toggleClass("fade-in");
+            $popup.css('display', 'block');
+            $popup.toggleClass("unslide");
+            // disable scrolling on the main page when the popup is open
+            $(document.body).css('overflow', 'hidden');
+
+            if (id === 'login-popup') {
+              $form = $("form[action='#login']"),
+              $button = $form.find("button[type='submit']"),
+              setupFormValidation($form, $button, true, true);
+            }
+
+            console.log("Opened Popup: " + id);
+        } else {
+            console.log("Failed to open popup: A Popup Already Exists or There is a Cooldown on Popup");
+        }
+    } else {
+        console.log("Failed to open popup: A Popup Already Exists or There is a Cooldown on Popup");
+    }
+}
+
+
+function closePopup() {
+    $("#popup-background.fade-in").toggleClass("fade-in");
+    var $popup = $(".popup.slide"), id = $popup.attr("id");
+    $popup.toggleClass("unslide");
+    $(document.body).css('overflow', 'auto');
+    localStorage.setItem(id, JSON.stringify(Date.now()));
+}
+
+// open btn dropdowns 
+function toggleDropdown(id) {
+  $("#"+id).toggleClass("show");
+}
+// Close the dropdown if the user clicks outside of it
+// window.onclick = function(event) {
+//   var dropdowns = document.getElementsByClassName("nav-dropdown-content");
+//   var i;
+//   for (i = 0; i < dropdowns.length; i++) {
+//     var openDropdown = dropdowns[i];
+//     if (openDropdown.classList.contains('show')) {
+//       openDropdown.classList.remove('show');
+//     }
+//   }
+// }
+
+
+mybutton = document.getElementById("topBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        mybutton.style.animation = "slideUp .5s 1";
+    } else {
+        mybutton.style.animation = "slideDown .5s 1 forwards";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+</script>
+<script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KL9F8CG0T6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KL9F8CG0T6');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"165d0bb304844c3b9c07a6fe006926eb","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

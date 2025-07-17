@@ -257,7 +257,8 @@ print(type({"One": 1}))
 # ╚═━═━═━═════━═══━═══━═══━═══━═══━═══━═══━═══━═══━═══━═══━═══━═══━═══━═══━═╝
 #  ➡️While Condition is true
 #  ➡️ Code wil run
-
+#         WHILe condition true : function  if function break else
+#
 # =============================================================================
 # END: [METHOD]
 # =============================================================================
@@ -272,13 +273,11 @@ print(type({"One": 1}))
 
 # --- Description -----------------------------------------------------------
 
-a = 0
-j = a
-while a < 10:
-    print("*")
-    while j < 9:
-        print("*")
-a += 1
+people = ["oussama", "ahmed", "sayed", "ali"]
+skills = ["html", "css", "js"]
+for name in zip(people, skills):
+
+    print(f"{name}  skills is :")
 
 
 # ╔═━═━═━═━═━═━═━═━═━═══━═━═━═━═━═━═━═━═━═━═━═━═━═━═━═══━═━═━═══━═━═━═━═━══╗
