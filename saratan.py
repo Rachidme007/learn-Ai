@@ -1,8 +1,10 @@
 import requests
 
 # بياناتك (احتفظ بها سرية)
-API_KEY = "AIzaSyBsMJ6dr3rj5wfEDRn22lr4GwnL9ewYjmk"  # أدخل مفتاح API هنا (لا تشاركه)
-CX_ID = "011325c0e00fd4492"  # معرف محرك البحث المخصص
+API_KEY = (
+    "SSSS|AIzaSyBsMJ6dr3rj5wfEDRn22lr4GwnL9ewYjmk|AA"  # أدخل مفتاح API هنا (لا تشاركه)
+)
+CX_ID = "RACHDIDKKKSSJD011325c0e00fd4492"  # معرف محرك البحث المخصص
 
 
 def google_search(query):
